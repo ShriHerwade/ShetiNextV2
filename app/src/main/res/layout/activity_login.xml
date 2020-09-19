@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageViewLoginHeader"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_Login"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserPassword"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/label_userName"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <EditText
+        android:id="@+id/editTextUserPassword"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/label_password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/button_createAccount"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
