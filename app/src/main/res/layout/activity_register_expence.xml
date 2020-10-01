@@ -7,4 +7,93 @@
     tools:context=".RegisterExpence">
 
 
+    <Spinner
+        android:id="@+id/spinnerExpenceGroup"
+        android:layout_width="319dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:entries="@array/expenceGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+    <Spinner
+        android:id="@+id/spinnerPersonFirmList"
+        android:layout_width="319dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/expencePaidTo_dummy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerExpenceSubGroup"></Spinner>
+
+    <Spinner
+        android:id="@+id/spinnerExpenceSubGroup"
+        android:layout_width="319dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/expenceSubGroup_Labour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerExpenceGroup"></Spinner>
+
+    <DatePicker
+        android:id="@+id/datePickerTransDate"
+        android:visibility="gone"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerPersonFirmList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:hint="@string/label_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMoneyPaid" />
+
+    <EditText
+        android:id="@+id/editTextMoneyPaid"
+        android:layout_width="319dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/label_moneyPaid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPersonFirmList" />
+
+    <EditText
+        android:id="@+id/editTextMultiLineDetails"
+        android:layout_width="319dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="@string/label_otherDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePickerTransDate" />
+
+    <Button
+        android:id="@+id/buttonSaveExpence"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/button_save"
+        android:background="@drawable/rounded_corner_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMultiLineDetails"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

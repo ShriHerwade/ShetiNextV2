@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/editTextMob"
         android:layout_width="319dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="@string/label_mob"
@@ -21,8 +21,8 @@
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="319dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="272dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="200dp"
         android:ems="10"
         android:hint="@string/label_person_firm_name"
         android:inputType="textPersonName"
@@ -30,20 +30,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/saveButton"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="319dp"
-        android:layout_height="51dp"
 
-        android:layout_marginBottom="224dp"
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
         android:text="@string/button_save"
-        app:iconTintMode="add"
+        android:background="@drawable/rounded_corner_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/editTextMob"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

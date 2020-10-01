@@ -23,42 +23,81 @@
         android:layout_height="46dp"
         android:layout_marginTop="40dp"
         android:text="@string/button_Login"
+        android:background="@drawable/rounded_corner_button"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUserPassword"
-        app:layout_constraintVertical_bias="0.974" />
-
-    <EditText
-        android:id="@+id/editTextUserName"
-        android:layout_width="319dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/label_userName"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.597"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextUserPassword"
         android:layout_width="319dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="30dp"
         android:ems="10"
         android:hint="@string/label_password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="302dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/label_userName"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLoginHeader" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="319dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/rounded_corner_button"
         android:text="@string/button_createAccount"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <Button
+        android:id="@+id/buttonAddExpence"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="156dp"
+        android:text="@string/button_addExpence"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDashboard"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/button_dashboard"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddPersonFirm"
+        android:layout_width="319dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="92dp"
+        android:text="@string/button_addPersonFirm"
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -6,4 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="410dp"
+        android:layout_height="166dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="166dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pie" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        tools:background="@drawable/tractor" />
+
+    <Button
+        android:id="@+id/imageButton2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        tools:background="@drawable/agronomy" />
+
+    <Button
+        android:id="@+id/imageButton3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:background="@drawable/agronomy" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:background="@drawable/farmer" />
+
+    <Button
+        android:id="@+id/imageButton5"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="0.022"
+        tools:background="@drawable/farmer" />
+
+    <Button
+        android:id="@+id/imageButton6"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:background="@drawable/agronomy" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

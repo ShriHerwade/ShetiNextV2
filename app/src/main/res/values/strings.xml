@@ -12,7 +12,40 @@
     <string name="label_dob">Birth Date</string>
     <string name="label_address">Address</string>
     <string name="label_moneyPaid">\u20B9 Paid </string>
+    <string name="label_otherDetails">Other Details </string>
+    <string name="label_date">Date</string>
     <string name="button_createAccount">Create Account</string>
     <string name="button_Login">Login</string>
     <string name="button_save">Save</string>
+
+    <string name="button_dashboard">Dashboard</string>
+    <string name="button_addExpence">Add New Expence</string>
+    <string name="button_addPersonFirm">Add New Person or Firm</string>
+
+    <string-array name="expenceGroup">
+        <item>Bills</item>
+        <item>Purchase</item>
+        <item>Labour</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="expenceSubGroup_Bills">
+        <item>Electric</item>
+        <item>Water</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="expenceSubGroup_Purchase">
+        <item>Seeds</item>
+        <item>Fertilizers</item>
+        <item>Pesticides</item>
+    </string-array>
+    <string-array name="expenceSubGroup_Labour">
+        <item>Watering</item>
+        <item>Cleaning</item>
+        <item>Sawing</item>
+    </string-array>
+    <string-array name="expencePaidTo_dummy">
+        <item>Sachin Pawar</item>
+        <item>Jagdish Jagtap</item>
+        <item>Sharikant Herwade</item>
+    </string-array>
 </resources>
